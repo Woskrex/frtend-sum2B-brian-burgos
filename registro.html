@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - VetCare Clínica Veterinaria</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <form method="POST" action="#" id="formulario-registro">
+        
+        <!-- SECCIÓN A: DATOS DEL DUEÑO -->
+        <section>
+            <h2>Sección A - Datos del Dueño</h2>
+            
+            <div>
+                <label for="nombre-dueno">Nombre:</label>
+                <input type="text" id="nombre-dueno" name="nombre-dueno" required>
+            </div>
+
+            <div>
+                <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+            </div>
+
+            <div>
+                <label for="dni">DNI:</label>
+                <input type="text" id="dni" name="dni" required>
+            </div>
+
+            <div>
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required>
+            </div>
+
+            <div>
+                <label for="confirmar-correo">Confirmar Correo:</label>
+                <input type="email" id="confirmar-correo" name="confirmar-correo" required>
+            </div>
+
+            <div>
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" name="contrasena" required>
+            </div>
+
+            <div>
+                <label for="confirmar-contrasena">Confirmar Contraseña:</label>
+                <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required>
+            </div>
+
+            <div>
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+            </div>
+
+            <div>
+                <label for="direccion">Dirección:</label>
+                <input type="text" id="direccion" name="direccion" required>
+            </div>
+
+            <div>
+                <label for="localidad">Localidad:</label>
+                <input type="text" id="localidad" name="localidad" required>
+            </div>
+
+            <div>
+                <label for="provincia">Provincia:</label>
+                <select id="provincia" name="provincia" required>
+                    <option value="">Seleccionar provincia</option>
+                    <option value="buenos-aires">Buenos Aires</option>
+                    <option value="catamarca">Catamarca</option>
+                    <option value="chaco">Chaco</option>
+                    <option value="chubut">Chubut</option>
+                    <option value="cordoba">Córdoba</option>
+                    <option value="corrientes">Corrientes</option>
+                    <option value="entre-rios">Entre Ríos</option>
+                    <option value="formosa">Formosa</option>
+                    <option value="jujuy">Jujuy</option>
+                    <option value="la-pampa">La Pampa</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- SECCIÓN B: DATOS DE LA MASCOTA -->
+        <section>
+            <h2>Sección B - Datos de la Mascota</h2>
+            
+            <div>
+                <label for="nombre-mascota">Nombre de la Mascota:</label>
+                <input type="text" id="nombre-mascota" name="nombre-mascota" required>
+            </div>
+
+            <div>
+                <label for="especie">Especie:</label>
+                <select id="especie" name="especie" required>
+                    <option value="">Seleccionar especie</option>
+                    <option value="perro">Perro</option>
+                    <option value="gato">Gato</option>
+                    <option value="ave">Ave</option>
+                    <option value="conejo">Conejo</option>
+                    <option value="reptil">Reptil</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="raza">Raza:</label>
+                <input type="text" id="raza" name="raza" required>
+            </div>
+
+            <fieldset>
+                <legend>Sexo:</legend>
+                <div>
+                    <input type="radio" id="sexo-macho" name="sexo" value="macho" required>
+                    <label for="sexo-macho">Macho</label>
+                </div>
+                <div>
+                    <input type="radio" id="sexo-hembra" name="sexo" value="hembra" required>
+                    <label for="sexo-hembra">Hembra</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="fecha-nacimiento-mascota">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha-nacimiento-mascota" name="fecha-nacimiento-mascota" required>
+            </div>
+
+            <div>
+                <label for="color">Color o Descripción Física:</label>
+                <input type="text" id="color" name="color">
+            </div>
+
+            <div>
+                <input type="checkbox" id="castrada" name="castrada">
+                <label for="castrada">La mascota está castrada o esterilizada</label>
+            </div>
+
+            <div>
+                <input type="checkbox" id="microchip" name="microchip">
+                <label for="microchip">La mascota tiene microchip</label>
+            </div>
+
+            <div id="numero-chip-container" style="display:none;">
+                <label for="numero-chip">Número de Microchip:</label>
+                <input type="text" id="numero-chip" name="numero-chip">
+            </div>
+
+            <div id="otra-especie-container" style="display:none;">
+                <label for="otra-especie">Especificar Otra Especie:</label>
+                <input type="text" id="otra-especie" name="otra-especie">
+            </div>
+
+            <div>
+                <label for="alergias">Alergias (máximo 250 caracteres):</label>
+                <textarea id="alergias" name="alergias" maxlength="250"></textarea>
+            </div>
+        </section>
+
+        <!-- SECCIÓN C: PREFERENCIAS -->
+        <section>
+            <h2>Sección C - Preferencias</h2>
+            
+            <fieldset>
+                <legend>Servicios de Interés:</legend>
+                <div>
+                    <input type="checkbox" id="servicio-consulta" name="servicios" value="consulta-general">
+                    <label for="servicio-consulta">Consulta General</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="servicio-vacuna" name="servicios" value="vacunacion">
+                    <label for="servicio-vacuna">Vacunación</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="servicio-dental" name="servicios" value="limpieza-dental">
+                    <label for="servicio-dental">Limpieza Dental</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="servicio-cirugia" name="servicios" value="cirugia">
+                    <label for="servicio-cirugia">Cirugía</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="servicio-dermatologia" name="servicios" value="dermatologia">
+                    <label for="servicio-dermatologia">Dermatología</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="servicio-emergencia" name="servicios" value="emergencia">
+                    <label for="servicio-emergencia">Emergencia</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Turno Preferido:</legend>
+                <div>
+                    <input type="radio" id="turno-manana" name="turno-preferido" value="manana" required>
+                    <label for="turno-manana">Mañana (8 AM - 12 PM)</label>
+                </div>
+                <div>
+                    <input type="radio" id="turno-tarde" name="turno-preferido" value="tarde" required>
+                    <label for="turno-tarde">Tarde (12 PM - 6 PM)</label>
+                </div>
+                <div>
+                    <input type="radio" id="turno-flexible" name="turno-preferido" value="flexible" required>
+                    <label for="turno-flexible">Flexible</label>
+                </div>
+            </fieldset>
+
+            <div>
+                <label for="veterinario">Veterinario Preferido:</label>
+                <select id="veterinario" name="veterinario" required>
+                    <option value="">Seleccionar veterinario</option>
+                    <option value="carlos-mendez">Dr. Carlos Mendez</option>
+                    <option value="sofia-garcia">Dra. Sofia Garcia</option>
+                    <option value="juan-lopez">Dr. Juan Lopez</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="frecuencia-visitas">Frecuencia Estimada de Visitas:</label>
+                <select id="frecuencia-visitas" name="frecuencia-visitas" required>
+                    <option value="">Seleccionar frecuencia</option>
+                    <option value="primera-vez">Primera vez</option>
+                    <option value="mensual">Mensual</option>
+                    <option value="cada-3-meses">Cada 3 meses</option>
+                    <option value="segun-necesidad">Según necesidad</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="como-conocio">¿Cómo nos Conoció?</label>
+                <select id="como-conocio" name="como-conocio" required>
+                    <option value="">Seleccionar opción</option>
+                    <option value="redes-sociales">Redes Sociales</option>
+                    <option value="recomendacion">Recomendación</option>
+                    <option value="busqueda-web">Búsqueda Web</option>
+                    <option value="paso-local">Pasó por el Local</option>
+                    <option value="otro">Otro</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- SECCIÓN D: CONFIRMACIÓN -->
+        <section>
+            <h2>Sección D - Confirmación</h2>
+            
+            <div>
+                <label for="observaciones">Observaciones Adicionales (máximo 300 caracteres):</label>
+                <textarea id="observaciones" name="observaciones" maxlength="300"></textarea>
+                <small id="contador-observaciones">0/300</small>
+            </div>
+
+            <div>
+                <input type="checkbox" id="recordatorios" name="recordatorios">
+                <label for="recordatorios">Acepta recibir recordatorios de turnos por correo electrónico</label>
+            </div>
+
+            <fieldset>
+                <legend>Aceptaciones:</legend>
+                <div>
+                    <input type="checkbox" id="terminos" name="terminos" value="acepto" required>
+                    <label for="terminos">Acepto los Términos y Condiciones de Servicio</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="privacidad" name="privacidad" value="acepto" required>
+                    <label for="privacidad">Acepto la Política de Privacidad</label>
+                </div>
+            </fieldset>
+        </section>
+
+        <!-- BOTONES -->
+        <div>
+            <button type="submit">Crear Cuenta</button>
+            <button type="reset">Limpiar</button>
+            <button type="button" onclick="window.location.href='index.html'">Volver al Inicio</button>
+        </div>
+    </form>
+</body>
+</html>
