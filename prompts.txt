@@ -1,0 +1,14 @@
+Prompt: "Genera el contenido inicial de la pagina principal para una clinica veterinaria llamada VetCare."
+
+Respuesta de Copilot:
+- Sugerencia de estructura HTML con header, seccion de servicios, tienda y contacto.
+
+Cambios realizados:
+- Ajuste los servicios para incluir consultas medicas, cirugia, vacunacion, grooming e internacion.
+- Inclui productos de alimentos y accesorios.
+- Cambie los textos para que transmitan confianza y cuidado.
+
+Analisis:
+- Copilot ayudo a empezar rapido con la estructura inicial.
+- Yo corregi y personalice los textos para que reflejen el negocio de VetCare.
+- El archivo prompts.txt documenta el uso de la IA y debe mantenerse actualizado a medida que se pide ayuda.
