@@ -1,14 +1,23 @@
-Prompt: "Genera el contenido inicial de la pagina principal para una clinica veterinaria llamada VetCare."
 
-Respuesta de Copilot:
-- Sugerencia de estructura HTML con header, seccion de servicios, tienda y contacto.
-
-Cambios realizados:
-- Ajuste los servicios para incluir consultas medicas, cirugia, vacunacion, grooming e internacion.
-- Inclui productos de alimentos y accesorios.
-- Cambie los textos para que transmitan confianza y cuidado.
-
-Analisis:
-- Copilot ayudo a empezar rapido con la estructura inicial.
-- Yo corregi y personalice los textos para que reflejen el negocio de VetCare.
-- El archivo prompts.txt documenta el uso de la IA y debe mantenerse actualizado a medida que se pide ayuda.
+============================================================ CONSULTA #1
+Etapa del proyecto: Etapa 1
+Fecha: 19-05-2026
+------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: 
+Crea una página HTML completa para una clínica veterinaria llamada VetCare Incluye: navbar sticky con logo y links (Inicio, Servicios, Especialidades, 
+Tienda, Registrarse) hero section con título y CTA sección de 4 servicios en 
+tarjetas con iconos 3 especialidades equipo de 3 veterinario, 3 testimonios 
+con estrella de 5 tienda y footer con horarios Agrega CSS profesional 
+responsive con variables de color y efectos hover.
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): 
+Copilot generó un HTML5 completo con todas las secciones un CSS 
+profesional con variables CSS para colores, grid responsive, efectos hover en 
+tarjetas y un footer con 4 columnas
+------------------------------------------------------------
+USO EN EL PROYECTO: 
+al principio me dio algunos archivos extra los borre y le dije que lo arregle y ajuste a como se me había pedido en la etapa 1 del pdf
+------------------------------------------------------------
+REFLEXION PERSONAL: 
+fue útil pero aveces copilot hace mas de lo necesario hay que ser muy especificos con los prompts que se le da
+============================================================
